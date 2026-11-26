@@ -104,9 +104,11 @@
                                                 <td class="text-dark py-3">{{ Auth::user()->email }}</td>
                                             </tr>
                                             <tr>
-                                                <th class="text-muted py-3 border-0"><i class="bi bi-clock-history me-2 text-primary"></i>Bergabung Sejak</th>
-                                                <td class="text-muted py-3 border-0">{{ Auth::user()->created_at->translatedFormat('d F Y, H:i') }} WIB</td>
-                                            </tr>
+   <th class="text-muted py-3 border-0"><i class="bi bi-clock-history me-2 text-primary"></i>Bergabung Sejak</th>
+    <td class="text-muted py-3 border-0">
+        {{ Auth::user()->created_at->locale('id')->translatedFormat('d F Y, H:i') }} WIB
+    </td>
+</tr>
                                         </tbody>
                                     </table>
                                 </div>
