@@ -1,0 +1,5 @@
+Nama Project    : simple-dashboard
+Framework       : Laravel
+Database        : db_simple_dashboard.sql
+Repository      : https://github.com/Davidrido/simple-dashboard.git
+Visibility      : Public
